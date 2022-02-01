@@ -1,17 +1,17 @@
-.global{
+.global {
   text-align: center;
   color: #232323;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f0f0f0;
   margin: 20px;
   padding: 20px;
 }
 
-.header{
+.header {
   font-size: 70%;
 }
 
-.content{
+.content {
   display: grid;
   grid-template-columns: auto;
   font-size: 100%;
@@ -22,7 +22,7 @@
   margin: 20px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1440px) {
   /* For larger screens */
   [class="content"] {
     grid-template-columns: auto auto auto auto auto;
@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-.button{
+.button {
   background-color: #232323;
   border: solid;
   color: #f0f0f0;
@@ -51,12 +51,12 @@
   transition-duration: 0.3s;
 }
 
-.button:hover{
+.button:hover {
   background-color: #f0f0f0;
   color: #232323;
 }
 
-.button:active{
+.button:active {
   box-shadow: 0 0 0 0 #232323;
   transform: scale(96%);
 }
