@@ -1,0 +1,72 @@
+<html style="background-color: #f0f0f0;">
+  <div class="global">
+  <header id="header" class="header">
+    <h1>CALCULATE YOUR CHARGE</h1>
+  </header>
+  <body>
+    <div id="content" class="content">
+      <div class="grid-item">Distance:
+        <select id="charge-distance">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        </select>
+        </div>
+      
+      <div class="grid-item">Number of dice:
+        <select name="number-of-dice" id="number-of-dice">
+        <option value="2">2D6</option>
+        <option value="3">3D6, discard one</option>
+        </select>
+      </div>
+      
+      <div class="grid-item">Rerolling: 
+      <select name="rerolling" id="rerolling">
+        <option value="False">No</option>
+        <option value="True">Yes</option>
+        </select>
+      </div>
+      
+      <div class="grid-item">Impediment: 
+      <select name="impediment" id="impediment">
+        <option value="0">None</option>
+        <option value="1">-1</option>
+        <option value="2">-2</option>
+        <option value="3">-3</option>
+        <option value="4">-4</option>
+        <option value="5">-5</option>
+        <option value="6">-6</option>
+        </select>
+      </div>
+      
+       <div class="grid-item">Bonus: 
+      <select name="bonus" id="bonus">
+        <option value="0">None</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        </select>
+      </div>
+      
+     </div>
+    
+    <div id="finalResults"></div>
+    
+    <div id="button"><button class="button" id="generate-button">CALCULATE</button></div>
+    
+    
+    </body>
+  </div>
+</html>
+   
