@@ -80,7 +80,7 @@ function diceProbability(distance, xD6){
   finalResults.innerHTML = " "
   finalResults.innerHTML += `<div class="header"><h1>The chance of ${distance}+ on ${xD6}D6 is ${makePercentage(diceProbability(distance, xD6))}</h1></div>`
   
-  //console.log(`The chance of a ${distance}+ on ${xD6}D6 is ${makePercentage(diceProbability(distance, xD6))}`)
-  //console.log(diceResults(xD6))
+  console.log(`The chance of a ${distance}+ on ${xD6}D6 is ${makePercentage(diceProbability(distance, xD6))}`)
+  console.log(diceResults(xD6))
     
 }
