@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Warhammer dice simulator but with CSS</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body>
+    <h1 class="big-title">Roll your dice</h1>
+    <div class="content">
+      <div class="grid-item">
+        <h2>Number of dice</h2>
+        <input type="number" min="1" max="100" step="1" id="num-dice" value="10" />
+        </label>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="grid-item">
+        <h2>To hit</h2>
+        <input type="number" min="2" max="6" step="1" id="to-hit" value="4" />
+        </label>
+      </div>
+
+
+      <div class="grid-item">
+        <h2>Rerolls</h2>
+        <input type="radio" id="no-hit-rerolls" name="hit-rerolls" checked>
+        <label for="no-rerolls">No rerolls</label><br>
+
+        <input type="radio" id="reroll-1s-to-hit" name="hit-rerolls">
+        <label for="reroll-1s-to-hit">Reroll 1s</label><br>
+
+        <input type="radio" id="reroll-misses" name="hit-rerolls">
+        <label for="reroll-misses">Reroll misses</label><br>
+      </div>
+
+      <div class="grid-item">
+        <h3>Bonus effects</h3>
+
+        <label for="cars">On a roll of:</label>
+
+        <select name="on-a-roll-of" id="on-a-roll-of">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5</option>
+          <option value="4">6</option>
+        </select>
+
+      </div>
+    </div>
+    </div>
+
+    <div class="content">
+      <div class="grid-item">
+        <h2>To wound</h2>
+        <input type="number" min="2" max="6" step="1" id="to-wound" value="4" />
+      </div>
+
+      <div class="grid-item">
+
+        <h3>Rerolls</h3>
+        <input type="radio" id="no-wound-rerolls" name="wound-rerolls" checked>
+        <label for="no-rerolls">No rerolls</label><br>
+
+        <input type="radio" id="reroll-1s-to-wound" name="wound-rerolls">
+        <label for="reroll-1s-to-wound">Reroll 1s</label><br>
+
+        <input type="radio" id="reroll-failed-wounds" name="wound-rerolls">
+        <label for="reroll-failed-wounds">Reroll failed wounds</label><br>
+      </div>
+
+      <div class="grid-item">
+        <h3>Bonus effects</h3>
+
+        <label for="cars">On a roll of:</label>
+
+        <select name="on-a-roll-of" id="on-a-roll-of">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5</option>
+          <option value="4">6</option>
+        </select>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid-item">
+        <h2>To save</h2>
+        <input type="number" min="2" max="6" step="1" id="to-save" value="4" />
+        </label>
+      </div>
+    </div>
+
+    <button id="roll-dice-btn" class="button">
+      <h1>Roll</h1>
+    </button>
+    </div>
+
+    <div id="results" class="content">
+      <div class="grid-item" id="hit-rolls"></div>
+      <div class="grid-item" id="wound-rolls"></div>
+      <div class="grid-item" id="feedback"></div>
+    </div>
+  </body>
+  <!-- partial -->
+  <script src="./roll-dice-script.js"></script>
+
+</body>
+
+</html>

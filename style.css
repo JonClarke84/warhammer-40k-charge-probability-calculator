@@ -1,6 +1,7 @@
 html {
   text-align: center;
   color: #232323;
+  font-size: 200%;
   font-family: "Roboto", sans-serif;
   background-color: #f0f0f0;
   margin: 20px;
@@ -11,12 +12,16 @@ html {
   font-size: 5em;
 }
 
+.h2 {
+  font-size:2em;
+}
+
 .content {
   display: grid;
   grid-template-columns: auto;
   font-size: 200%;
   padding: 3em;
-  text-color: yellow;
+  color: #232323;
   border-style: solid;
   border-width: 5px;
   margin: 20px;
@@ -24,7 +29,7 @@ html {
 
 @media only screen and (min-width: 1440px) {
   /* For larger screens */
-  [class="global"] {
+  html {
     font-size: 100%;
   }
   [class="content"] {
